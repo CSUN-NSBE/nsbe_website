@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+  Source: Future Imperfect by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+
+<head>
+    <title>CSUN - National Society Of Black Engineers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Additional styling for dropdown and e-board */
+        .eboard-dropdown {
+            margin: 2em 0;
+        }
+
+        .eboard-dropdown select {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .eboard-section {
+            background: #f4f4f4;
+            padding: 2em 1em;
+            margin-top: 1em;
+            border-radius: 8px;
+        }
+
+        .eboard-section h2 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 1.5em;
+        }
+
+        .eboard-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+
+        .eboard-card {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            width: 180px;
+            text-align: center;
+            padding: 1em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .eboard-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 0.8em;
+        }
+
+        .eboard-name {
+            font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 0.2em;
+        }
+
+        .eboard-title {
+            font-size: 0.85em;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Home</a></h1>
+            <nav class="links">
+                <ul>
+                    <li style="color: maroon;"><a href="Team.html">Team</a></li>
+                    <li><a href="Vision.html">Vision</a></li>
+                    <li><a href="Sponsorship.html">Sponsorship</a></li>
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
+                    <li class="search">
+                        <a class="fa-search" href="#search">Search</a>
+                        <form id="search" method="get" action="#">
+                            <input type="text" name="query" placeholder="Search" />
+                        </form>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu -->
+        <section id="menu">
+            <!-- Search -->
+            <section>
+                <form class="search" method="get" action="#">
+                    <input type="text" name="query" placeholder="Search" />
+                </form>
+            </section>
+
+            <!-- Links -->
+            <section>
+                <ul class="links">
+                    <!-- Sidebar Navigation -->
+                    <li>
+                        <a href="index.html">
+                            <h3>Home</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Team.html">
+                            <h3>Team</h3>
+                            <p>Learn more about the brains behind this!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Vision.html">
+                            <h3>Vision</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Sponsorship.html">
+                            <h3>Sponsorship</h3>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Actions -->
+            <section>
+                <ul class="actions stacked">
+                    <li><a href="#" class="button large fit">Donate Now</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- Main -->
+        <div id="main">
+            <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <h2 style=" font-size: 2em; text-align: center;">
+                    Meet Our Executive Board
+                </h2>
+            </div>
+            <div style="display: flex; align-items: stretch; width: 100%; min-height: 260px;">
+                <div style="flex: 1 1 100%; display: flex; align-items: center; justify-content: center;">
+                    <img src="images/eboardPHOTO.jpg" alt="NSBE E-Board"
+                        style="width:100%; max-width:50vw; height:auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
+                </div>
+            </div>
+
+
+            <!-- Executive Board Section with Dropdown -->
+            <section class="eboard-dropdown">
+                <label for="eboardSelect" style="font-weight: 700; font-size: 1.2em;">Select Executive Board
+                    Year:</label>
+                <select id="eboardSelect" onchange="switchEboard(this.value)">
+                    <option value="2025-26">2025-26 E-Board</option>
+                    <option value="2024-25">2024-25 E-Board</option>
+                </select>
+            </section>
+
+            <!-- 2025-26 Executive Board -->
+            <section id="eboard-2025-26" class="eboard-section">
+                <h2>Chapter Executive Board <span style="font-style: italic; color: maroon;">2025-2026</span></h2>
+                <h3 style="justify-content: center; text-align: center;">Administrative Zone (VPS)</h3>
+                    <div class="eboard-cards">
+                        <div class="eboard-card">
+                            <img src="images/tabby_ceb2526.jpg" alt="Tabitha Sulaiman" />
+                            <div class="eboard-name">Tabitha Sulaiman</div>
+                            <div class="eboard-title">President</div>
+                        </div>
+                        <div class="eboard-card">
+                            <img src="images/sherry_ceb2526.jpg" alt="Aichetou Camara" />
+                            <div class="eboard-name">Aichetou Camara</div>
+                            <div class="eboard-title">Internal</div>
+                            <div class="eboard-title">Vice-President</div>
+                        </div>
+                        <div class="eboard-card">
+                            <img src="images/justin_ceb2526.jpg" alt="Justin Smith" />
+                            <div class="eboard-name">Justin Smith</div>
+                            <div class="eboard-title">External</div>
+                            <div class="eboard-title">Vice-President</div>
+                        </div>
+                        <div class="eboard-card">
+                            <img src="images/sherry_ceb2526.jpg" alt="Chloe Joy Parker" />
+                            <div class="eboard-name">Chloe Joy Parker</div>
+                            <div class="eboard-title">Secretary</div>
+                        </div>
+                        <!-- Add more members as needed -->
+                    </div>
+            </section>
+
+            <!-- 2024-25 Executive Board (initially hidden) -->
+            <section id="eboard-2024-25" class="eboard-section" style="display:none;">
+                <h2>Chapter Executive Board <span style="font-style: italic; color: maroon;">2024-2025</span></h2>
+                <div class="eboard-cards">
+                    <div class="eboard-card">
+                        <img src="images/2024-25/john_doe.jpg" alt="John Doe" />
+                        <div class="eboard-name">John Doe</div>
+                        <div class="eboard-title">President</div>
+                    </div>
+                    <div class="eboard-card">
+                        <img src="images/2024-25/jane_smith.jpg" alt="Jane Smith" />
+                        <div class="eboard-name">Jane Smith</div>
+                        <div class="eboard-title">Vice President</div>
+                    </div>
+                    <div class="eboard-card">
+                        <img src="images/2024-25/alex_jones.jpg" alt="Alex Jones" />
+                        <div class="eboard-name">Alex Jones</div>
+                        <div class="eboard-title">Vice President</div>
+                    </div>
+                    <!-- Add more members as needed -->
+                </div>
+            </section>
+
+            <section id="footer">
+                <ul class="icons">
+                    <li>
+                        <a href="https://www.instagram.com/nsbecsun" class="icon brands fa-instagram"><span
+                                class="label">Instagram</span></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/company/csun-nsbe" class="icon brands fa-linkedin-in"><span
+                                class="label">LinkedIn</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@nsbecsun" class="icon brands fa-tiktok"><span
+                                class="label">TikTok</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrDVsRFBXbqpnvgTxQXMSlBjgQllhrCXKJWJNnpCvKTtZrgWJVdKHpLsTWvknthxwKsV"
+                            class="icon solid fa-envelope">
+                            <span class="label">Email</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    &copy; 2025 CSUN NSBE Chapter: <a href="http://html5up.net">HTML5 UP</a>.
+                    Images: <a href="http://unsplash.com">Unsplash</a>.
+                </p>
+            </section>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            // JS to toggle executive board sections on dropdown change
+            function switchEboard(year) {
+                const eboard2026 = document.getElementById('eboard-2025-26');
+                const eboard2025 = document.getElementById('eboard-2024-25');
+
+                if (year === '2025-26') {
+                    eboard2026.style.display = 'block';
+                    eboard2025.style.display = 'none';
+                } else {
+                    eboard2026.style.display = 'none';
+                    eboard2025.style.display = 'block';
+                }
+            }
+        </script>
+</body>
+
+</html>
